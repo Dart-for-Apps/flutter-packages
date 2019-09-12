@@ -3,7 +3,7 @@ library mouse_cursor;
 import 'package:flutter/gestures.dart';
 import 'package:mouse_cursor/style.dart';
 
-import 'empty_html.dart' if (dart.library.js) 'dart:html' as html;
+import 'empty_changer.dart' if (dart.library.html) 'mouse_changer.dart';
 import 'package:flutter/material.dart';
 
 /// A Calculator.
@@ -17,25 +17,20 @@ class MouseCursor extends MouseRegion {
   }) : super(
           child: child,
           onEnter: (enterEvent) async {
-            if (html.document != null) {
-              html.document.body.style.cursor = _getCursorStyleName(style);
-            }
+            setMouseCursor(_getCursorStyleName(style));
+
             if (onEnter != null) {
               onEnter(enterEvent);
             }
           },
           onHover: (hoverEvent) async {
-            if (html.document != null) {
-              html.document.body.style.cursor = _getCursorStyleName(style);
-            }
+            setMouseCursor(_getCursorStyleName(style));
             if (onHover != null) {
               onHover(hoverEvent);
             }
           },
           onExit: (exitEvent) async {
-            if (html.document != null) {
-              html.document.body.style.cursor = 'default';
-            }
+            setMouseCursor('default');
             if (onExit != null) {
               onExit(exitEvent);
             }

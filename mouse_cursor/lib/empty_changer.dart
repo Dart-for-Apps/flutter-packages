@@ -1,0 +1,1 @@
+setMouseCursor(String name) {}
