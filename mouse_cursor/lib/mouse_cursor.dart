@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 export 'style.dart';
 export 'empty_changer.dart' if (dart.library.html) 'mouse_changer.dart';
 
-/// A Calculator.
+/// A MouseCursor helper widget.
 class MouseCursor extends MouseRegion {
   MouseCursor({
     Widget child,

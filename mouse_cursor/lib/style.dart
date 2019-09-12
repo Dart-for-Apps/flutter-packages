@@ -1,3 +1,6 @@
+library mouse_cursor;
+
+/// Supported cursor styles
 enum CursorStyle {
   auto,
   normal, // same as default
