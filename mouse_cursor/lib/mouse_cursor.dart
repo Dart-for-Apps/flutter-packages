@@ -1,10 +1,13 @@
 library mouse_cursor;
 
 import 'package:flutter/gestures.dart';
-import 'package:mouse_cursor/style.dart';
+import 'style.dart';
 
 import 'empty_changer.dart' if (dart.library.html) 'mouse_changer.dart';
 import 'package:flutter/material.dart';
+
+export 'style.dart';
+export 'empty_changer.dart' if (dart.library.html) 'mouse_changer.dart';
 
 /// A Calculator.
 class MouseCursor extends MouseRegion {
