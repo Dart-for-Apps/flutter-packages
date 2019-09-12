@@ -3,7 +3,7 @@ library mouse_cursor;
 import 'package:flutter/gestures.dart';
 import 'package:mouse_cursor/style.dart';
 
-import 'empty_html.dart' if (dart.library.html) 'dart:html' as html;
+import 'empty_html.dart' if (dart.library.js) 'dart:html' as html;
 import 'package:flutter/material.dart';
 
 /// A Calculator.
