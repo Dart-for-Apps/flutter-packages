@@ -31,3 +31,5 @@ MouseCursor(
     style: CursorStyle.text,
 );
 ```
+
+The `default` cursor is aliased to `CursorStyle.normal` because `default` is a dart keyword.
