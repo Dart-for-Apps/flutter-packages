@@ -1,6 +1,6 @@
 # MouseCursor
 
-This widget change mouse cursor when the mouse pointer is in the range of
+This widget changes a mouse cursor when the mouse pointer is in the range of
 the widget. This will give more web-like experience when the app is
 `flutter web` app. On android/ios app, this does not effect anything.
 
